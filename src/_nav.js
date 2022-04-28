@@ -1,6 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
+  cilBed,
   cilBell,
   cilCalculator,
   cilCalendar,
@@ -12,19 +13,35 @@ import {
   cilPuzzle,
   cilSpeedometer,
   cilStar,
+  cilTv,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { t } from 'i18next'
 
 const _nav = [
   {
     component: CNavItem,
-    name: 'Dashboard',
+    name: t('Dashboard'),
     to: '/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {
       color: 'info',
       text: 'NEW',
     },
+  },
+  {
+    component: CNavGroup,
+    name: t('Rooms'),
+    to: '/rooms',
+    icon: <CIcon icon={cilBed} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: t('Facilities'),
+        to: '/rooms/facilities',
+        icon: <CIcon icon={cilTv} customClassName="nav-icon" />,
+      },
+    ],
   },
   {
     component: CNavTitle,
