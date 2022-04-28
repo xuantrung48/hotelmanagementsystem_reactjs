@@ -10,5 +10,10 @@
   "Register": "Register",
   "Email": "Email",
   "Password": "Password",
-  "Rooms": "Rooms"
+  "Rooms": "Rooms",
+  "New Facility": "New Facility",
+  "Name": "Name",
+  "Close": "Close",
+  "Save": "Save",
+  "Image": "Image"
 }
