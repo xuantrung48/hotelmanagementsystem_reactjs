@@ -1,8 +1,6 @@
-let path = process.env.API_PATH
-
 const APIPath = {
-  path: process.env.API_PATH,
-  facilities: path + '/facilities',
+  path: 'api/',
+  facilities: 'facilities',
 }
 
 export default APIPath
