@@ -17,6 +17,7 @@ import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
 import { logo } from 'src/assets/brand/logo'
+import { t } from 'i18next'
 
 const AppHeader = () => {
   const dispatch = useDispatch()
@@ -37,14 +38,14 @@ const AppHeader = () => {
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
             <CNavLink to="/dashboard" component={NavLink}>
-              Dashboard
+              {t('Dashboard')}
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
+            <CNavLink href="#">{t('Users')}</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
+            <CNavLink href="#">{t('Settings')}</CNavLink>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav>
